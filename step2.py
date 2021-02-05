@@ -9,8 +9,8 @@ import pickle
 RESULT_FILE = "model.pickle"
 
 # The csv files you want to fit your training model.
-CSV_FILES = ["username_1.csv", "username_2.csv"]
-
+subs = ["askreddit", "gaming","dankmemes","memes","politics","pcmasterrace","tifu","okbuddyretard","holup","cursedcomments","crackheadcraigslist","roastme"]
+CSV_FILES = []
 # The subreddits comments you want to allow in the training model (lowercase). An empty list will allow all.
 ALLOWED_SUBREDDITS = []
 
@@ -26,7 +26,8 @@ def init():
 
     word_dictionary = dict()
     comments_list = list()
-
+    for i in subs:
+        CSV_FILES.append(i+".csv")
     for csv_file in CSV_FILES:
 
         # We iterate the .csv row by row.

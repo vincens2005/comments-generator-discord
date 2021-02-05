@@ -1,0 +1,20 @@
+{
+  "name": "comments-generator",
+  "version": "1.0.0",
+  "description": "A discord bot that makes comments",
+  "main": "index.js",
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "discord.js": "^12.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "author": "",
+  "license": "ISC"
+}
