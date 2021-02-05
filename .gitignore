@@ -1,3 +1,4 @@
 *.csv
 *.pickle
 .env
+node_modules
