@@ -38,4 +38,5 @@ function checkupdates(){
         });
     }
 }
-client.login(token)
+client.login(token);
+checkupdates();
