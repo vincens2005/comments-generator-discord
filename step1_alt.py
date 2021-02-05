@@ -16,7 +16,7 @@ HEADERS = {"User-Agent": "Comments Downloader v0.1"}
 COMMENTS_LIST = list()
 
 # Set a maximum number of comments to download.
-MAX_COMMENTS = 150000
+MAX_COMMENTS = 222000
 
 
 def init():

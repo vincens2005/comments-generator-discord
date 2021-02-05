@@ -9,7 +9,6 @@ client.on('ready', () => {
     console.log('Logged in!');
 });
 client.on('message', msg => {
-    console.log(msg.channel);
     if (!msg.author.bot) {
         exec("python3 step3.py", (error, stdout, stderr) => {
             if (error) {
