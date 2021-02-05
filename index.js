@@ -1,7 +1,8 @@
 var Discord = require('discord.js');
+require('dotenv').config()
 var client = new Discord.Client();
 const { exec } = require("child_process");
-var token = process.env.TOKEN;
+var token = process.env.BTOKEN;
 var lastupdated = process.env.CDATE || Date.now();
 var updating = false
 client.on('ready', () => {
