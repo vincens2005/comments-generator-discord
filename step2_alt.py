@@ -9,7 +9,7 @@ import pickle
 RESULT_FILE = "model.pickle"
 
 # The txt files you want to fit your training model.
-TXT_FILES = ["file1.txt", "file2.txt"]
+TXT_FILES = ["romeo_juliet.txt","lovecraft.txt"]
 
 # The order (memory length in words) you need. 1 or 2 are the most common options.
 ORDER = 2

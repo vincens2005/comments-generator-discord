@@ -63,7 +63,7 @@ def init():
 
     # Context-aware.
     new_comment = generate_comment(model=model, order=2,
-                                   number_of_sentences=2,
+                                   number_of_sentences=10,
                                    initial_prefix=get_prefix_with_context(model, "Agent_Phantom"))
 
     print(new_comment)

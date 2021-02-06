@@ -9,7 +9,7 @@ import pickle
 RESULT_FILE = "model.pickle"
 
 # The csv files you want to fit your training model.
-subs = ["ketchup","awww","conspiracytheories","starwars","startrek","harrypotter","lotr","twilight","acotar","asoue","NetflixSexEducation","prideandprejudice"]
+subs = ["ketchup","cursedcomments","usernamechecksout","toiletpaperusa"]
 CSV_FILES = []
 # The subreddits comments you want to allow in the training model (lowercase). An empty list will allow all.
 ALLOWED_SUBREDDITS = []
