@@ -4,7 +4,7 @@ A script that generates sentences using Markov chains.
 
 import pickle
 import random
-
+import sys
 
 MODEL_FILE = "./model.pickle"
 
@@ -13,6 +13,14 @@ ES_STOPWORDS_FILE = "./assets/stopwords-es.txt"
 EN_STOPWORDS_FILE = "./assets/stopwords-en.txt"
 
 STOP_WORDS = set()
+
+length = 2
+if len(sys.argv) >= 3:
+    length = int(sys.argv[2])
+context = "nothing"
+
+if len(sys.argv) >= 2:
+    context = sys.argv[1]
 
 
 def add_extra_words():
@@ -52,7 +60,8 @@ def init():
     model_keys = list(model.keys())
 
     # Basic random.
-    new_comment = generate_comment(model=model, order=2,
+
+    """new_comment = generate_comment(model=model, order=2,
                                    number_of_sentences=2,
                                    initial_prefix=random.choice(model_keys))
 
@@ -60,11 +69,11 @@ def init():
     new_comment = generate_comment(model=model, order=2,
                                    number_of_sentences=2,
                                    initial_prefix=get_prefix(model_keys))
-
+"""
     # Context-aware.
     new_comment = generate_comment(model=model, order=2,
-                                   number_of_sentences=2,
-                                   initial_prefix=get_prefix_with_context(model, "Agent_Phantom"))
+                                   number_of_sentences=length,
+                                   initial_prefix=get_prefix_with_context(model, context))
 
     print(new_comment)
 

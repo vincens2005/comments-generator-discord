@@ -19,7 +19,7 @@ client.on('ready', () => {
 });
 client.on('message', msg => {
     if (!msg.author.bot) {
-        exec("python3 step3.py", (error, stdout, stderr) => {
+        exec("python3 step3.py \""+msg.content+"\" "+Math.floor((Math.random() * 4) + 2), (error, stdout, stderr) => {
             if (error) {
                 console.log(`error: ${error.message}`);
                 return;
