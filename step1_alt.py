@@ -10,13 +10,13 @@ from datetime import datetime
 import requests
 
 # Try with your favorite subreddits (case insensitive).
-SUBREDDITS = ["askreddit", "gaming","dankmemes","memes","politics","pcmasterrace","tifu","okbuddyretard","holup","cursedcomments","crackheadcraigslist","roastme"]
+SUBREDDITS = ["askreddit", "gaming","dankmemes","memes","politics","pcmasterrace","tifu","okbuddyretard","holup","cursedcomments","crackheadcraigslist","roastme","pewdiepiesubmissions","aliens","ketchup","conspiracytheories"]
 
 HEADERS = {"User-Agent": "Comments Downloader v0.1"}
 COMMENTS_LIST = list()
 
 # Set a maximum number of comments to download.
-MAX_COMMENTS = 222000
+MAX_COMMENTS = 322000
 
 
 def init():
