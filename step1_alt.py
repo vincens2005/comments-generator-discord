@@ -8,9 +8,8 @@ import time
 from datetime import datetime
 
 import requests
-
 # Try with your favorite subreddits (case insensitive).
-SUBREDDITS = ["askreddit", "gaming","dankmemes","memes","politics","pcmasterrace","tifu","okbuddyretard","holup","cursedcomments","crackheadcraigslist","roastme","pewdiepiesubmissions","aliens","ketchup","conspiracytheories"]
+SUBREDDITS = ["ketchup","awww","conspiracytheories","starwars","startrek","harrypotter","lotr","twilight","acotar","asoue","NetflixSexEducation","prideandprejudice"]
 
 HEADERS = {"User-Agent": "Comments Downloader v0.1"}
 COMMENTS_LIST = list()
